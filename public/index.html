@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="heading ">
+        <div class="tagline">
+            Welcome to Chess Online!!!
+        </div>
+    </div>
+
+    <div class="enter ">
+        <div class="name">Enter your name</div> 
+        <input type="text" class="input">
+        <button class="btn">lets play</button>
+    </div>
+
+    <div class="sidebar hide">
+        <div class="list-heading">
+            Choose Opponent - Active players
+        </div>
+        <div class="list ">
+            <!-- <div class="active-players">
+                rajat
+            </div>
+            <div class="active-players">
+                nihar
+            </div>
+            <div class="active-players">
+                rajat
+            </div>
+            <div class="active-players">
+                nihar
+            </div>
+            <div class="active-players">
+                rajat
+            </div> -->
+    
+        </div>
+    </div>
+    
+
+    <div class="chess-board hide">
+        <div class="row" id="1">
+            <div class="div1 block" rowid="1" id="1">
+                <div class="rook black">
+                    <img src="./images/Chess_rdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="1" id="2">
+                <div class="knight black">
+                    <img src="./images/Chess_ndt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="1" id="3">
+                <div class="bishop black">
+                    <img src="./images/Chess_bdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="1" id="4">
+                <div class="queen black">
+                    <img src="./images/Chess_qdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="1" id="5">
+                <div class="king black">
+                    <img src="./images/Chess_kdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="1" id="6">
+                <div class="bishop black">
+                    <img src="./images/Chess_bdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="1" id="7">
+                <div class="knight black">
+                    <img src="./images/Chess_ndt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="1" id="8">
+                <div class="rook black">
+                    <img src="./images/Chess_rdt45.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="2">
+            <div class="div2 block" rowid="2" id="1">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="2" id="2">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="2" id="3">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="2" id="4">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="2" id="5">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="2" id="6">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="2" id="7">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="2" id="8">
+                <div class="pawn black">
+                    <img src="./images/Chess_pdt45.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="3">
+            <div class="div1" rowid="3" id="1"></div>
+            <div class="div2" rowid="3" id="2"></div>
+            <div class="div1" rowid="3" id="3"></div>
+            <div class="div2" rowid="3" id="4"></div>
+            <div class="div1" rowid="3" id="5"></div>
+            <div class="div2" rowid="3" id="6"></div>
+            <div class="div1" rowid="3" id="7"></div>
+            <div class="div2" rowid="3" id="8"></div>
+        </div>
+        <div class="row" id="4">
+            <div class="div2" rowid="4" id="1"></div>
+            <div class="div1" rowid="4" id="2"></div>
+            <div class="div2" rowid="4" id="3"></div>
+            <div class="div1" rowid="4" id="4"></div>
+            <div class="div2" rowid="4" id="5"></div>
+            <div class="div1" rowid="4" id="6"></div>
+            <div class="div2" rowid="4" id="7"></div>
+            <div class="div1" rowid="4" id="8"></div>
+        </div>
+        <div class="row" id="5">
+            <div class="div1" rowid="5" id="1"></div>
+            <div class="div2" rowid="5" id="2"></div>
+            <div class="div1" rowid="5" id="3"></div>
+            <div class="div2" rowid="5" id="4"></div>
+            <div class="div1" rowid="5" id="5"></div>
+            <div class="div2" rowid="5" id="6"></div>
+            <div class="div1" rowid="5" id="7"></div>
+            <div class="div2" rowid="5" id="8"></div>
+        </div>
+        <div class="row" id="6">
+            <div class="div2" rowid="6" id="1"></div>
+            <div class="div1" rowid="6" id="2"></div>
+            <div class="div2" rowid="6" id="3"></div>
+            <div class="div1" rowid="6" id="4"></div>
+            <div class="div2" rowid="6" id="5"></div>
+            <div class="div1" rowid="6" id="6"></div>
+            <div class="div2" rowid="6" id="7"></div>
+            <div class="div1" rowid="6" id="8"></div>
+        </div>
+        <div class="row" id="7">
+            <div class="div1 block" rowid="7" id="1">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="7" id="2">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="7" id="3">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="7" id="4">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="7" id="5">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="7" id="6">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="7" id="7">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="7" id="8">
+                <div class="pawn white">
+                    <img src="./images/Chess_plt45.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row" id="8">
+            <div class="div2 block" rowid="8" id="1">
+                <div class="rook white">
+                    <img src="./images/Chess_rlt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="8" id="2">
+                <div class="knight white">
+                    <img src="./images/Chess_nlt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="8" id="3">
+                <div class="bishop white">
+                    <img src="./images/Chess_blt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="8" id="4">
+                <div class="king white">
+                    <img src="./images/Chess_klt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="8" id="5">
+                <div class="queen white">
+                    <img src="./images/Chess_qlt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="8" id="6">
+                <div class="bishop white">
+                    <img src="./images/Chess_blt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div2 block" rowid="8" id="7">
+                <div class="knight white">
+                    <img src="./images/Chess_nlt45.svg" alt="">
+                </div>
+            </div>
+            <div class="div1 block" rowid="8" id="8">
+                <div class="rook white">
+                    <img src="./images/Chess_rlt45.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="winner hide">
+        <div class="one hide">Player 1 Won !!!!!</div>
+        <div class="two hide">Player 2 Won !!!!!</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <script>
+        var socket = io();
+    </script>
+
+    <script src="./start.js"></script>
+    <script src="./init.js"></script>
+    <script src="./script.js"></script>
+    <script src="./socket.js"></script>
+</body>
+</html>
